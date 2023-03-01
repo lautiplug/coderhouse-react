@@ -1,3 +1,9 @@
+# Pre entrega N°2 para Coderhouse. Este proyecto tiene la finalidad de simular un sitio web dedicado a la venta de productos.
+
+A continuación adjunto un prototipo de aplicación que está aún en desarrollo.
+
+![2023-03-01-15-38-48](https://user-images.githubusercontent.com/108102623/222234554-671da98c-4d26-4992-a3f5-f16e22f48b26.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
