@@ -20,17 +20,16 @@ export const Jewelery = () => {
     {
       data ?
       <section className="container">
-        <h1 className="title-index">Jewelery</h1>
+        <h1 className="title-index">Products</h1>
         <div className="container__products animate__animated animate__fadeIn">
               {data.map((product) => (
                 <>
                   <div className="container__product-card">
+                    <Link className="product-link" to={`/item/${product.id}`}>  
                     <img className='img-product' src={product.image} alt="" />
-                    <p className="pokemon-title">{product.title}</p>
-                    <h3>${product.price}</h3>
-                    <Link className="pokemon-link" to={`/item/${product.id}`}>
-                      Add to cart
                     </Link>
+                    <p className="product-title">{product.title}</p>
+                    <h3>${product.price}</h3>
                   </div>
                 </>
               ))}

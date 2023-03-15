@@ -1,26 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { App } from './components/Index';
+import { ViewDetails } from './components/Checkout/ViewBagDetails';
+import { Index } from './components/Index/Index';
 import { ItemDetail } from './components/ItemDetail/ItemDetail';
 import { Electronics } from './components/ItemListContainer/Electronics';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { Jewelery } from './components/ItemListContainer/Jewelery';
 import Navbar from './components/Navbar/Navbar';
-import './components/style.css';
+import { CartProvider } from './context/CartContext';
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCNbu-gdbC-ZNgex-Ctlt__eltX41l7MR8",
+  authDomain: "coderhouse-ecommerce-b5f87.firebaseapp.com",
+  projectId: "coderhouse-ecommerce-b5f87",
+  storageBucket: "coderhouse-ecommerce-b5f87.appspot.com",
+  messagingSenderId: "254299122085",
+  appId: "1:254299122085:web:6d371c325d440114a3e04c"
+};
+
+const app = initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route exact path='/' element={<App title={"Welcome to Plug BA!"}/>}/>
-      <Route exact path='/shop' element={<ItemListContainer/>}/>
-      <Route exact path='/electronics' element={<Electronics/>}/>
-      <Route exact path='/jewelery' element={<Jewelery/>}/>
-      <Route exact path='/item/:id' element={<ItemDetail/>}/>
-    </Routes> 
+      <CartProvider value={"ll"}>
+        <Navbar />
+          <Routes>
+            <Route exact path='/' element={<Index title={"Welcome to Plug BA!"}/>}/>
+            <Route exact path='/shop' element={<ItemListContainer/>}/>
+            <Route exact path='/electronics' element={<Electronics/>}/>
+            <Route exact path='/jewelery' element={<Jewelery/>}/>
+            <Route exact path='/item/:id' element={<ItemDetail/>}/>
+            <Route exact path='/Bag Details' element={<ViewDetails/>}/>
+          </Routes>
+      </CartProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

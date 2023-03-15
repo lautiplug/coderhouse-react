@@ -1,0 +1,33 @@
+import { Link } from "react-router-dom";
+import { useCartContext } from "../../context/CartContext";
+
+export const CartTotal = () => {
+  const { cart } = useCartContext();
+
+  let totalPrice = 0
+  
+  cart.forEach((item) => {
+    totalPrice = totalPrice + item.price * item.quantity;
+  });
+
+  if (cart.length < 1) {
+    return (
+      <div className="checkout-container">
+          <Link className="button-details-link" to={"/Checkout"}>
+            Your bag is empty, start to buy!
+          </Link>
+      </div>
+    );
+  }
+  else{
+    return (
+      <div className="checkout-container">
+          <Link className="button-details-link" to={"/Bag Details"}>
+            ${totalPrice.toFixed(2)} | Checkout
+          </Link>
+      </div>
+    )
+  }
+};
+
+
