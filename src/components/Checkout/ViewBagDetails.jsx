@@ -3,23 +3,9 @@ import { useCartContext } from "../../context/CartContext";
 import "../Checkout/Checkout.css";
 import { ViewBagDetailsPrice } from "./ViewBagDetailsPrice";
 
-export const ViewDetails = () => {
-  const { cart } = useCartContext();
-  const [qty, setQty] = useState(1)
-  
-  const onClickPlus = () => {
-    if(qty >= 5) return
-    cart.forEach((item) => {
-      setQty(item.quantity + qty);
-    });
-  }
+export const ViewDetails = (id) => {
+  const { cart, addProduct, removeProduct, removeFromCart} = useCartContext();
 
-  const onClickLess = () => {
-    if(qty === 1) return
-    cart.forEach((item) => {
-      setQty(qty - item.quantity);
-    });
-  }
 
   return (
     <>
@@ -41,12 +27,14 @@ export const ViewDetails = () => {
                             <h2 className="baglist-title">{item.title}</h2>
                             <div className="baglist-flex-side">
                               <h5 className="cart-product-detail-price">
-                                Price: ${item.price * qty}
+                                Price: ${item.price * item.quantity}
                               </h5>
                               <div className="baglist-qty">
-                                <button className="button-qty" onClick={onClickLess}> -1 </button>
-                                <h4 className="baglist-qty-price"> QTY: {item.quantity}</h4>
-                                <button className="button-qty" onClick={onClickPlus}> +1 </button>
+                                {/* <button className="button-qty" onClick={() => removeProduct(item.id)}> -1 </button> */}
+                                <button className="button-qty" onClick={() => removeFromCart(item)}> -1 </button>
+                                    <h4 className="baglist-qty-price">
+                                    QTY: {item.quantity}</h4>
+                                <button className="button-qty" onClick={() => addProduct(item)}> +1 </button>
                               </div>
                             </div>
                           </div>

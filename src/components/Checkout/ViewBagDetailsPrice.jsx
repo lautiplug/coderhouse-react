@@ -5,15 +5,14 @@ import { ViewDetails } from "./ViewBagDetails";
 
 export const ViewBagDetailsPrice = () => {
   const { cart } = useCartContext();
-  const {qty} = ViewDetails()
 
   let total = 0;
   let tax = 0;
   let totalPrice = 0;
 
   cart.forEach((item) => {
-    tax = (item.price * qty * 12) / 100;
-    total = total + item.price * qty;
+    tax = (item.price * item.quantity * 12) / 100;
+    total = total + item.price * item.quantity;
     totalPrice = totalPrice + item.price * item.quantity + tax;
   });
 
@@ -25,7 +24,7 @@ export const ViewBagDetailsPrice = () => {
       <ul className="order-details-total">
         <li className="order-details-li">
           <p>Subtotal:</p>
-          <p className="order-detail-right">${}</p>
+          <p className="order-detail-right">${total}</p>
         </li>
         <li className="order-details-li">
           <p>Shipping</p>
@@ -37,7 +36,7 @@ export const ViewBagDetailsPrice = () => {
         </li>
         <li className="order-details-li">
           <p>Estimated total: </p>
-          <p className="order-detail-total">${totalPrice.toFixed(2) * qty}</p>
+          <p className="order-detail-total">${totalPrice.toFixed(2)}</p>
         </li>
       </ul>
       <hr />

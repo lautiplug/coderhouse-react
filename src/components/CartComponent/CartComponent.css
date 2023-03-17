@@ -32,10 +32,11 @@
 
 .counter-number {
   position: absolute;
-  top: 0;
+  top: 5%;
   right: 0;
   font-size: 12px;
   color: white;
+  z-index: 1000;
 }
 
 .title-index {

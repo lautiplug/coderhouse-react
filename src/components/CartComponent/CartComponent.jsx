@@ -7,13 +7,7 @@ import { CartTotal } from "./CartTotal";
 export const CartComponent = () => {
   const [show, setShow] = useState(false);
 
-  const { cart } = useCartContext();
-
-  let qty = 0
-  
-  cart.forEach((item) => {
-    qty = item.quantity;
-  });
+  const { cart, quantity } = useCartContext();
 
   return (
     <>
@@ -22,7 +16,7 @@ export const CartComponent = () => {
           onClick={() => setShow(true)}
           className="fa-solid fa-bag-shopping"
         ></img>
-        <span className="counter-number">{qty}</span>
+        <span className="counter-number">{quantity}</span>
       </div>
       {
         <div
@@ -49,7 +43,7 @@ export const CartComponent = () => {
                         Quantity: {item.quantity}
                       </h4>
                       <h5 className="cart-product-detail-text">
-                        Price: ${item.price.toFixed(2)}
+                        Price: ${item.price}
                       </h5>
                       <h6 className="cart-product-detail-text fwb">
                         AVAILABLE
