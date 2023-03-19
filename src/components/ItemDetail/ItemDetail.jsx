@@ -1,6 +1,7 @@
 import { doc, getDoc, getFirestore } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import { useCartContext } from "../../context/CartContext";
 import larrow from "../../images/left-arrowGL.png";
 import rarrow from "../../images/right-arrowG.png";
@@ -8,12 +9,13 @@ import rarrow from "../../images/right-arrowG.png";
 import "./ItemDetail.css";
 
 export const ItemDetail = () => {
+
   const [items, setItems] = useState();
   const { id } = useParams();
 
   useEffect(() => {
+    
     const db = getFirestore();
-
     const djRef = doc(db, "items", `${id}`);
 
     getDoc(djRef).then((snapshot) => {
@@ -35,10 +37,7 @@ export const ItemDetail = () => {
               style={{ backgroundColor: `${items.colorBGC}` }}
             >
               <div class="carousel-item active">
-                <div
-                  className="detail-item animate__animated animate__fadeIn"
-                  key={items.id}
-                >
+                <div className="detail-item animate__animated animate__fadeIn" key={items.id}>
                   <img className="img-detail a" src={items.girlWBag}></img>
                   <img className="img-front-first" src={items.imageFront}></img>
                 </div>
@@ -96,7 +95,7 @@ export const ItemDetail = () => {
               <h1 className="actions-card-title">{items.title}</h1>
               <span className="divider"></span>
               <p className="actions-card-p">${items.price}</p>
-              <p className="actions-card-type"><i class="fa-solid fa-circle" style={{color: `${items.colorCircle}`}}></i>{items.bagType}</p>
+              <p className="actions-card-type"><i class="fa-solid fa-circle" style={{ color: `${items.colorCircle}` }}></i>{items.bagType}</p>
               <p className="actions-card-p">AVAILABLE</p>
               <p className="actions-card-selection">Your selection is available for immediate purchase online</p>
               <button onClick={() => addProduct(items)} className="actions-card-button">
@@ -105,9 +104,14 @@ export const ItemDetail = () => {
             </div>
           </div>
         </div>
-      ) : (
-        <p className="loading">Loading...</p>
-      )}
+      ) : 
+      <div class="text-center animate__animated animate__fadeIn">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      }
+      <ToastContainer />
     </div>
   );
 };

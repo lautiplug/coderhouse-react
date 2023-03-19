@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { ViewDetails } from './components/Checkout/ViewBagDetails';
+import { ViewDetails } from './components/Checkout/Checkout';
 import { Index } from './components/Index/Index';
 import { ItemDetail } from './components/ItemDetail/ItemDetail';
-import { Electronics } from './components/ItemListContainer/Electronics';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { Jewelery } from './components/ItemListContainer/Jewelery';
 import Navbar from './components/Navbar/Navbar';
 import { CartProvider } from './context/CartContext';
 import { initializeApp } from "firebase/app";
+import { FormPreBuy } from './components/Form/FormPreBuy';
+import { Women } from './components/ItemListContainer/Women';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCNbu-gdbC-ZNgex-Ctlt__eltX41l7MR8",
@@ -31,10 +32,11 @@ root.render(
           <Routes>
             <Route exact path='/' element={<Index title={"Welcome to Plug BA!"}/>}/>
             <Route exact path='/shop' element={<ItemListContainer/>}/>
-            <Route exact path='/electronics' element={<Electronics/>}/>
+            <Route exact path='/women' element={<Women/>}/>
             <Route exact path='/jewelery' element={<Jewelery/>}/>
             <Route exact path='/item/:id' element={<ItemDetail/>}/>
             <Route exact path='/Bag Details' element={<ViewDetails/>}/>
+            <Route exact path='/Form' element={<FormPreBuy/>}/>
           </Routes>
       </CartProvider>
     </BrowserRouter>

@@ -39,12 +39,6 @@
   z-index: 1000;
 }
 
-.title-index {
-  margin: 0px;
-  text-align: center;
-  margin-top: 20px;
-}
-
 .contador {
   width: 60px;
   height: 60px;
@@ -59,7 +53,7 @@
   top: 7%;
   right: 5%;
   background: rgb(255, 255, 255);
-  width: 30%;
+  width: 23%;
   height: 0vh;
   overflow-y: scroll;
   transition: all 600ms;
@@ -72,12 +66,12 @@
   top: 7%;
   right: 5%;
   background: rgb(255, 255, 255);
-  width: 30%;
-  height: 60vh;
+  width: 23%;
+  height: 50vh;
   overflow-y: scroll;
   transition: all 600ms;
   z-index: 400;
-  border: 1px solid rgb(213, 213, 213);
+
   font-family: 'Julius Sans One', sans-serif;
 }
 
@@ -142,11 +136,44 @@ h2 {
   font-size: 16px;
 }
 
+.cart-qty{
+  height: 25px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 1px;
+  background-color: #f0f0f0;
+}
+
+.baglist-qty-price{
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.button-cart-qty{
+  border: none;
+  width: 30px;
+  background-color: #f0f0f0;
+  transition: all 300ms;
+}
+
+.button-cart-qty:hover{
+  background-color: #dddddd;
+}
+
 .cart-product-detail-container {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 20px;
+  margin-top: 5px;
+}
+
+.cart-product-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
 }
 
 .fwb {
@@ -154,7 +181,6 @@ h2 {
 }
 
 .checkout {
-  
   background-color: white;
   border-top: 1px solid rgb(215, 215, 215);
 }
@@ -173,12 +199,36 @@ h2 {
 }
 
 .checkout-container {
+  width: 100%;
+}
+
+.buttons-bag-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
   bottom: 0;
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
   background-color: white;
+}
+
+.button-bag-details-link{
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #1b1b1b;
+  outline: 1px solid #1b1b1b;
+  display: block;
+  height: 40px;
+  width: 100%;
+  padding: 12px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
 }
 
 .button-details-link {
@@ -188,10 +238,11 @@ h2 {
   text-transform: uppercase;
   cursor: pointer;
   background-color: #1b1b1b;
-  border-color: #1b1b1b;
+  outline: 1px solid #1b1b1b;
   display: block;
   height: 40px;
   position: relative;
+  bottom: 0;
   width: 100%;
   padding: 12px;
 }

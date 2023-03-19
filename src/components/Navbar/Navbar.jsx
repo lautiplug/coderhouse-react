@@ -41,7 +41,7 @@ function Navbar() {
               <Link className="navbar-links" to={"/shop"}>
                 Handbags
               </Link>
-              <Link className="navbar-links" to={"/electronics"}>
+              <Link className="navbar-links" to={"/women"}>
                 Women
               </Link>
               <Link className="navbar-links" to={"/jewelery"}>

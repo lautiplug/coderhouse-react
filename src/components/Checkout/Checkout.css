@@ -76,7 +76,7 @@ section {
 .shopping-bag-img{
   width: 200px;
   height: 240px;
-  margin-right: 100px;
+  margin-right: 30px;
   aspect-ratio: 3/2;
   object-fit: contain;
   mix-blend-mode: darken;
@@ -107,14 +107,17 @@ section {
 
 .hr-before-wr{
   width: 100%;
+  height: 2px;
   margin-left: 60px;
 }
 
 .shopping-bag-wrapper {
   width: 100%;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   margin-left: 5%;
 }
 
@@ -137,6 +140,7 @@ section {
 
 .baglist-flex-details{
   width: 100%;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,6 +174,7 @@ section {
   padding: 2px;
 }
 
+
 .baglist-title{
   line-height: initial;
   font-size: 15px;
@@ -187,6 +192,22 @@ section {
   color: #313131;
   font-weight: bold;
   margin-bottom: 0px;
+}
+
+.delete-button {
+  text-align: start;
+  font-weight: bold;
+  color: var(--clr-black);
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.delete-button:hover{
+  transform: scale(1.1);
+}
+
+.cart-product-detail-container{
+  gap: 5px;
 }
 
 .order-summary {
@@ -238,4 +259,29 @@ li{
 
 .cart-product-detail-selection{
   margin-bottom: 0px;
+}
+
+/* /////////////////////// */
+
+.modal-box{
+  height: 23rem;
+/*   background-color:#e7e7e7; */
+}
+
+.modal-title{
+  font-size: 30px;
+}
+
+.modal-flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-modal{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  Clip-path: inset(25px 0px 0px 0px);
+  mix-blend-mode: darken;
 }

@@ -13,7 +13,7 @@ export const CartTotal = () => {
   if (cart.length < 1) {
     return (
       <div className="checkout-container">
-          <Link className="button-details-link" to={"/Checkout"}>
+          <Link className="button-details-link" to={"/shop"}>
             Your bag is empty, start to buy!
           </Link>
       </div>
@@ -22,7 +22,7 @@ export const CartTotal = () => {
   else{
     return (
       <div className="checkout-container">
-          <Link className="button-details-link" to={"/Bag Details"}>
+          <Link className="button-details-link" to={"/Form"}>
             ${totalPrice.toFixed(2)} | Checkout
           </Link>
       </div>
