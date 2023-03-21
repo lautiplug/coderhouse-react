@@ -25,11 +25,9 @@ export const Women = () => {
   return (
     <>
       <div className="hero-products">
-      <div className="hero-products">
               <p className="hero-products-subtitle-women">GUCCI SPRING SUMMER</p>
-              <h1 className='hero-products-title'>WOMEN</h1>
+              <h1 className='hero-products-title-women'>WOMEN</h1>
             </div>
-      </div>
       {
         items ?
           <div className='grid-layout'>
@@ -42,7 +40,11 @@ export const Women = () => {
             ))}
           </div>
           :
-          <p className='loading'>Cargando...</p>
+          <div class="text-center animate__animated animate__fadeIn">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
       }
     </>
   )

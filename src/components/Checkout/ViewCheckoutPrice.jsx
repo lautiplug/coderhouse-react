@@ -47,7 +47,7 @@ export const ViewBagDetailsPrice = () => {
           purchase.
         </p>
         <div className="checkout-container">
-            <Link className="button-details-link" to={"/Bag Details"}>
+            <Link className="button-details-link" to={"/Form"}>
               Checkout
             </Link>
         </div>

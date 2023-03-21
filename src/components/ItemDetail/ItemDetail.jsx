@@ -62,10 +62,7 @@ export const ItemDetail = () => {
               </div>
 
               <div class="carousel-item">
-                <div
-                  className="detail-item animate__animated animate__fadeIn"
-                  key={items.id}
-                >
+                <div className="detail-item animate__animated animate__fadeIn" key={items.id}>
                   <img className="img-front" src={items.imageLeft}></img>
                   <img className="img-front" src={items.imageRight}></img>
                 </div>

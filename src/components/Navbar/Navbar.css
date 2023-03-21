@@ -19,98 +19,12 @@
 
 /* Header scroll effect */
 
-.header-actions-scroll{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-right: 2rem;
-  display: none;
-}
-
-.header-place-scroll{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 12px;
-  margin-left: 30px;
-  color: var(--clr-white-light);
-  display: none;
-}
-
-.header.active{
+.header.active {
   width: 100%;
-  height: 4rem;
+  height: 7.3rem;
   background: #1b1b1b;
   transition: all 300ms;
 }
-
-.header.active .header-title {
-  display: none;
-}
-
-.header.active .navbar{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  line-height: 3rem;
-}
-
-.header.active .header-actions-scroll{
-  display: block;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 12px;
-  margin-left: 30px;
-  color: var(--clr-white-light);
-}
-
-.header.active .header-place-scroll{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 12px;
-  margin-left: 30px;
-  color: var(--clr-white-light);
-}
-
-.header.active .navbar-top-header {
-  display: none;
-}
-
-
-.header.active .counter-number {
-  position: absolute;
-  top: -60%;
-  right: 0;
-  font-size: 12px;
-  color: var(--clr-white-light);
-}
-
-.header.active .header-icon{
-  margin-right: 1.5rem;
-  font-size: 15px;
-  color: var(--clr-white-light);
-}
-
-.header.active .header-icon-right{
-  margin-left: 1rem;
-  font-size: 15px;
-  border: 2px solid;
-  border-radius: 50%;
-  padding: 8px;
-  color: var(--clr-white-light);
-}
-
-.header.active .country{
-  display: none;
-}
-
-.header.active .language-site{
-  display: none;
-}
-
 
 /* End Header scroll effect */
 
@@ -124,23 +38,31 @@
   position: fixed;
   top: 0;
   z-index: 500;
-  background: linear-gradient(to bottom,#25211e 0,rgba(37,33,30,0) 100%);
+  background: linear-gradient(to bottom, #25211e 0, rgba(37, 33, 30, 0) 100%);
   transition: all 300ms;
 }
 
-.header:hover{
+.header:hover {
   background: #1b1b1b;
   transition: all 300ms;
 }
 
-.navbar{
+.fa-bars{
+  display: none;
+}
+
+.fa-x{
+  display: none;
+}
+
+.navbar {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navbar-top-header{
+.navbar-top-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -148,7 +70,7 @@
   margin-top: 20px;
 }
 
-.header-place{
+.header-place {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -157,38 +79,38 @@
   color: var(--clr-white-light);
 }
 
-.country{
+.country {
   font-family: 'Gucci';
   margin-left: 10px;
   font-size: 13px;
   font-weight: normal;
 }
 
-.language-site{
+.language-site {
   margin-bottom: 0px;
   font-size: 13px;
   font-weight: normal;
 }
 
-.number-phone-header{
+.number-phone-header {
   margin-left: 10px;
   font-weight: normal;
 }
 
-.header-actions{
+.header-actions {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-right: 2rem;
 }
 
-.header-icon{
+.header-icon {
   margin-right: 2.5rem;
   font-size: 15px;
   color: var(--clr-white-light);
 }
 
-.header-icon-right{
+.header-icon-right {
   margin-left: 2rem;
   font-size: 15px;
   border: 2px solid;
@@ -202,11 +124,11 @@
   margin-bottom: 0px;
   letter-spacing: 14px;
   text-transform: uppercase;
-  width:160px;
+  width: 160px;
   margin-right: 115px;
 }
 
-.navbar-ul{
+.navbar-ul {
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -231,4 +153,159 @@
 .navbar-links:nth-child(10) {
   color: var(--clr-fgreen);
   font-weight: bold;
+}
+
+
+/* media queries navbar */
+
+@media only screen and (max-width: 960px) {
+
+  .header {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    background: linear-gradient(to bottom, #25211e 0, rgba(37, 33, 30, 0) 100%);
+    transition: all 300ms;
+  }
+
+  .header.active {
+    width: 100%;
+    height: 4rem;
+    background: #1b1b1b;
+    transition: all 300ms;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px;
+    margin-right: 20px;
+  }
+
+  .header-icon {
+    margin-right: 10px;
+    font-size: 14px;
+    margin-top: 1px;
+  }
+
+  .header-icon-right {
+    margin-left: 0px;
+    font-size: 14px;
+    color: var(--clr-white-light);
+    border: none;
+    padding: 0px;
+    margin-top: 3px;
+  }
+
+  .fa-bars{
+    margin-left: 20px;
+    color: #AAA6A2;
+    font-size: 14px;
+    margin-top: 3px;
+    display: block;
+  }
+
+  .header-place {
+    display: none;
+  }
+
+  
+  .navbar-top-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .header-title {
+    background-size: 93px 16px;
+    height: 16px;
+    width: 93px;
+  }
+
+  .header-title-link{
+    width: 0px;
+    margin-right: 56px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
+    transform: translateY(-120%);
+    transition: all 600ms;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .menu--active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
+    transform: translateY(0);
+    transition: all 600ms;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+
+  .fa-x {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    cursor: pointer;
+    display: block;
+  }
+
+  .navbar-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar-li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+  }
+
+  .navbar-links {
+    color: rgb(4, 4, 4);
+    font-size: 16px;
+  }
+
+  .title-index{
+    display: none;
+  }
+
 }

@@ -28,7 +28,7 @@ export const ItemListContainer = () => {
     <>
       {
         items ?
-          <section className="container-products animate__animated animate__fadeIn">
+          <section className="container-products animate__animated animate__fadeIn" key={items.id}>
             <div className="hero-products">
               <h1 className='hero-products-title'>WOMEN'S HANDBAGS</h1>
               <p className="hero-products-hr">  </p>
@@ -37,48 +37,47 @@ export const ItemListContainer = () => {
             </div>
             <div className='products-actions'>
               <h1 className="title-index">WOMEN | Handbags</h1>
-              <div className='product-selects'>
-                <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <div className='product-selects' key={items.id}>
+                <div className="dropdown">
+                  <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Category
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">All ({items.length})</a></li>
-                    <li><a class="dropdown-item" href="#">Shoulder Bags For Women ({items.length})</a></li>
-                    <li><a class="dropdown-item" href="#">Totes Bags For Women({items.length})</a></li>
+                  <ul className="dropdown-menu">
+                    <li key={items.id}><a className="dropdown-item" href="#">All ({items.length})</a></li>
+                    <li key={items.id}><a className="dropdown-item" href="#">Shoulder Bags For Women ({items.length})</a></li>
+                    <li key={items.id}><a className="dropdown-item" href="#">Totes Bags For Women({items.length})</a></li>
                   </ul>
                 </div>
-                <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div className="dropdown">
+                  <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Line
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">All</a></li>
-                    <li><a class="dropdown-item" href="#">Aphrodite</a></li>
-                    <li><a class="dropdown-item" href="#">Blondie</a></li>
+                  <ul className="dropdown-menu">
+                    <li key={items.id}><a className="dropdown-item" href="#">All</a></li>
+                    <li key={items.id}><a className="dropdown-item" href="#">Aphrodite</a></li>
+                    <li key={items.id}><a className="dropdown-item" href="#">Blondie</a></li>
                   </ul>
                 </div>
-                <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div className="dropdown">
+                  <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Sort by: Newest
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Newest</a></li>
-                    <li><a class="dropdown-item" href="#">Price - high to low</a></li>
-                    <li><a class="dropdown-item" href="#">Price - low to high</a></li>
+                  <ul className="dropdown-menu">
+                    <li key={items.id}><a className="dropdown-item" href="#">Newest</a></li>
+                    <li key={items.id}><a className="dropdown-item" href="#">Price - high to low</a></li>
+                    <li key={items.id}><a className="dropdown-item" href="#">Price - low to high</a></li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="container__products animate__animated animate__fadeIn">
+            <div className="container__products animate__animated animate__fadeIn" key={items.id}>
               {items.map((product) => (
                 <>
-                  <Link className="container__product-card" to={`/item/${product.id}`}>
-                    <div className="product-link">
+                  <Link key={product.id} className="container__product-card" to={`/item/${product.id}`}>
+                    <div key={product.id} className="product-link">
                       <img className='img-product' src={product.image} alt="" />
                       <p className="product-title">{product.title}</p>
                       <h3 className='product-price'>${product.price}</h3>
-                      <button className='product-buy-button'>Shop this </button>
                     </div>
                   </Link>
                 </>
@@ -86,9 +85,9 @@ export const ItemListContainer = () => {
             </div>
           </section>
           :
-          <div class="text-center animate__animated animate__fadeIn">
-            <div class="spinner-border" role="status">
-              <span class="visually-hidden">Loading...</span>
+          <div className="text-center animate__animated animate__fadeIn">
+            <div className="spinner-border" role="status">
+              <span className="visually-hidden">Loading...</span>
             </div>
           </div>
       }

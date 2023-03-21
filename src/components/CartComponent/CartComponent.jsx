@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import shoppingbag from '../../images/shopping-bag.png'
 import "./CartComponent.css";
 import { useCartContext } from "../../context/CartContext";
@@ -24,7 +24,7 @@ export const CartComponent = () => {
           id="carrito" className={show ? "cart__table--active" : "cart__table"}>
           <i
             onClick={() => setShow(false)}
-            className="fa-solid fa-x close-cart"
+            className="fa-solid fa-xmark close-cart"
           ></i>
           <h2 className="cart-title"> CART </h2>
           <hr />
@@ -40,10 +40,10 @@ export const CartComponent = () => {
                           {item.title}
                         </h3>
                         <div className="cart-qty">
-                          <button className="button-cart-qty" onClick={() => decrementItem(item)}><i class="fa-solid fa-angle-left"></i></button>
+                          <button className="button-cart-qty" onClick={() => decrementItem(item)}><i className="fa-solid fa-angle-left"></i></button>
                           <h4 className="baglist-qty-price">
                             QTY: {item.quantity}</h4>
-                          <button className="button-cart-qty" onClick={() => addProduct(item)}><i class="fa-sharp fa-solid fa-angle-right"></i></button>
+                          <button className="button-cart-qty" onClick={() => addProduct(item)}><i className="fa-sharp fa-solid fa-angle-right"></i></button>
                         </div>
                         <h5 className="cart-product-detail-text">
                           Price: ${item.price}
