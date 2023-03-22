@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
 import './ItemListContainer.css';
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import heart from '../../images/heart.png'
-import heartBlack from '../../images/heartBlack.png'
 import { collection, getDocs, getFirestore } from 'firebase/firestore';
 
 export const ItemListContainer = () => {
 
   const [items, setItems] = useState()
+
+  // showing info using useEffect and Firebase, I also add an spinner while data is loading.
 
   useEffect(() => {
     const db = getFirestore()
@@ -21,8 +21,6 @@ export const ItemListContainer = () => {
     })
 
   }, [])
-
-  console.log(items)
 
   return (
     <>
@@ -72,7 +70,6 @@ export const ItemListContainer = () => {
             </div>
             <div className="container__products animate__animated animate__fadeIn" key={items.id}>
               {items.map((product) => (
-                <>
                   <Link key={product.id} className="container__product-card" to={`/item/${product.id}`}>
                     <div key={product.id} className="product-link">
                       <img className='img-product' src={product.image} alt="" />
@@ -80,7 +77,6 @@ export const ItemListContainer = () => {
                       <h3 className='product-price'>${product.price}</h3>
                     </div>
                   </Link>
-                </>
               ))}
             </div>
           </section>

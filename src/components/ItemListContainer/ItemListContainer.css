@@ -264,6 +264,18 @@
   position: relative;
 }
 
+/* Hero products Men */
+
+.hero-products-men {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  background: rgba(30, 28, 28, 0.271);
+  background-image: url("../../images/HeroRegularStandard_Spring-Summer-Anticipated-Look-February-2023-WLOOK14-mx_001_Default.avif");
+  background-size: cover;
+  background-blend-mode: soft-light;
+  position: relative;
+}
 
 /* spinner */
 

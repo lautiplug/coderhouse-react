@@ -3,15 +3,15 @@ import './ItemListContainer.css';
 import { Link } from 'react-router-dom';
 import { doc, getDoc, getDocs, getFirestore, collection } from 'firebase/firestore'
 
-export const Women = () => {
+export const Men = () => {
 
   const [items, setItems] = useState()
 
-    // same than ItemListContainer but now with "Women" category
+  // same than ItemListContainer but now with "Men" category
 
   useEffect(() => {
     const db = getFirestore()
-    const djRefCollection = collection(db, 'Women')
+    const djRefCollection = collection(db, 'Men')
 
     getDocs(djRefCollection).then((snapshot) => {
       if (snapshot === 0) {
@@ -22,11 +22,12 @@ export const Women = () => {
 
   }, [])
 
+
   return (
     <>
-      <div className="hero-products">
+      <div className="hero-products-men">
         <p className="hero-products-subtitle-women">GUCCI SPRING SUMMER</p>
-        <h1 className='hero-products-title'>WOMEN</h1>
+        <h1 className='hero-products-title'>MEN</h1>
       </div>
       {
         items ?

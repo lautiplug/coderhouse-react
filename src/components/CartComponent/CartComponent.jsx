@@ -10,6 +10,8 @@ export const CartComponent = () => {
 
   const { cart, quantity, decrementItem, addProduct} = useCartContext();
 
+  // receiving context and using useState to show/hide cart
+
   return (
     <>
       <div className="counter-contain">
@@ -30,8 +32,7 @@ export const CartComponent = () => {
           <hr />
           {cart.map((item) => {
             return (
-              <>
-                <div className="cart-product-box">
+                <div key={item.id} className="cart-product-box">
                   <div className="cart-product">
                     <img className="cart-img" src={item.image}></img>
                     <div className="cart-product-detail-container">
@@ -56,7 +57,6 @@ export const CartComponent = () => {
                   </div>
                   <hr />
                 </div>
-              </>
             );
           })}
           <div className="buttons-bag-container">

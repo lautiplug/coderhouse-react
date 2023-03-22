@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom"
+
 export const ButtonShopNow = () => {
   return (
-    <button className="carousel-button">Shop now</button>
+    <Link to={'/shop'} className="carousel-button mt-4">Shop now</Link>
   )
 }

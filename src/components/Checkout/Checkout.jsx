@@ -7,6 +7,8 @@ import { ViewBagDetailsPrice } from "./ViewCheckoutPrice";
 export const ViewDetails = () => {
   const { cart, addProduct, decrementItem, removeProduct } = useCartContext();
 
+  // just receiving contexts from UseCartContext and showing it, I also added an increment-decrement buttons
+
   return (
     <>
       <div className="hero-products-checkout"></div>
@@ -16,7 +18,7 @@ export const ViewDetails = () => {
           <div className="salvador">
             {cart.map((item) => {
               return (
-                <div className="bag-content">
+                <div key={item.id} className="bag-content">
                   <div className="shopping-bag-content">
                     <hr className="hr-before-wr" />
                     <div className="shopping-bag-wrapper">

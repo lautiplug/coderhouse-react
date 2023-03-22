@@ -12,31 +12,31 @@ export const IndexCarousel = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <div className="carousel-details">
-              <h1 className="carousel-text">Gucci Guilty</h1>
+              <h1 className="carousel-text">Loafers with interlocking g</h1>
               <ButtonShopNow/>
             </div>
             <div className="d-block w-100 carousel-img1"/>
           </div>
           <div className="carousel-item">
             <div className="carousel-details">
-              <h1 className="carousel-text">Loafers & Moccasins</h1>
-              <div className="carousel-button-par">
-                <button className="carousel-button-flex">Shop men</button>
-                <button className="carousel-button-flex">Shop women</button>
-              </div>
+              <h1 className="carousel-text">Handbags</h1>
+              <ButtonShopNow/>
             </div>
             <div className="d-block w-100 carousel-img2"/>
           </div>
           <div className="carousel-item">
             <div className="carousel-details">
-              <h1 className="carousel-text-b">Ophidia</h1>
-              <ButtonShopNow/>
+              <h1 className="carousel-text-b"> Gucci Belts </h1>
+              <div className="carousel-button-par mt-4">
+                <button className="carousel-button-flex">Shop men</button>
+                <button className="carousel-button-flex">Shop women</button>
+              </div>
             </div>
             <div className="d-block w-100 carousel-img3"/>
           </div>
           <div className="carousel-item">
             <div className="carousel-details">
-              <h1 className="carousel-text">Gucci Spring Summer 2023</h1>
+              <h1 className="carousel-text">Gucci Nojum</h1>
               <ButtonShopNow/>
             </div>
             <div className="d-block w-100 carousel-img4"/>

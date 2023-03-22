@@ -10,6 +10,8 @@ export const CartTotal = () => {
     totalPrice = totalPrice + item.price * item.quantity;
   });
 
+  // A little conditional return
+
   if (cart.length < 1) {
     return (
       <div className="checkout-container">

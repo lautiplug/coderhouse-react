@@ -6,20 +6,9 @@ import {doc, getDoc, getDocs, getFirestore, collection} from 'firebase/firestore
 
 export const Index = () => {
 
-/*   const [items, setItems] = useState([])
-
-  useEffect(() => {
-    const db = getFirestore();
-    const biciRef = doc(db, "items", "cUbSx11TU0x4RhyL68BO")
-    getDoc(biciRef).then((snapshot) => {
-      if (snapshot.exists()) {
-        setItems({id: snapshot.id, ...snapshot.data()})
-      }
-    })
-
-  }, []) */
-
   const [items, setItems] = useState([])
+
+  // getting items to show in index carousel, not interesting scaling it at the moment
 
     useEffect(() => {
       const db = getFirestore()
@@ -34,21 +23,12 @@ export const Index = () => {
   
     }, [])
 
-    console.log(items)
-
   return (
     <>
     <div className="container-index">
       <IndexCarousel/>
       <IndexCarouselBag/>
     </div>
-{/* 
-    {
-      items && 
-      <div>
-        <img src={items.image} alt="" />
-      </div>
-    } */}
     </>
   );
 };

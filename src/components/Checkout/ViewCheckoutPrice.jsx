@@ -5,6 +5,8 @@ import { useCartContext } from "../../context/CartContext";
 export const ViewBagDetailsPrice = () => {
   const { cart } = useCartContext();
 
+  // I had problems showing totals, this is the way I found to make it correctly, I'd appreciate solutions :)
+
   let total = 0;
   let tax = 0;
   let totalPrice = 0;
@@ -48,7 +50,7 @@ export const ViewBagDetailsPrice = () => {
         </p>
         <div className="checkout-container">
             <Link className="button-details-link" to={"/Form"}>
-              Checkout
+              Confirm Buy
             </Link>
         </div>
       </div>
