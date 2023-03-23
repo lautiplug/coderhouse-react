@@ -96,7 +96,7 @@
   letter-spacing: 2px;
   font-variant-ligatures: none;
   line-height: 70px;
-  color: #1b1b1b;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -118,10 +118,10 @@
   height: 40px;
   position: relative;
   margin-bottom: 15px;
-  width: 30%;
+  width: 10%;
   padding: 12px;
   color: white;
-  left: 39%;
+  left: 45%;
   transform: translateX(-50%);
 }
 
@@ -349,5 +349,36 @@
     margin-bottom: 200px;
     height: 30px;
     width: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .carousel-text {
+    color: #f0f0f0;
+    letter-spacing: 2px;
+    font-variant-ligatures: none;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Gucci";
+    text-align: center;
+    font-size: 24px;
+    display: block;
+    line-height: 35px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .carousel-text-b {
+    font-family: "Gucci";
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-variant-ligatures: none;
+    line-height: 70px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    display: block;
+    line-height: 35px;
   }
 }
