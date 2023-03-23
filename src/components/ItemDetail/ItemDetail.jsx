@@ -40,16 +40,16 @@ export const ItemDetail = () => {
             >
               <div className="carousel-item active">
                 <div className="detail-item animate__animated animate__fadeIn">
-                  <img className="img-detail a" src={items.girlWBag} alt="Imagen que muestra una cartera gucci"></img>
-                  <img className="img-front-first" src={items.imageFront} alt="Imagen que muestra una modelo con cartera gucci"></img>
+                  <img className="img-detail a" src={items.girlWBag} alt="Imagen que muestra una chica modelando una cartera gucci"></img>
+                  <img className="img-front-first" src={items.imageFront} alt="Imagen que muestra una cartera gucci"></img>
                 </div>
               </div>
               <div className="carousel-item">
                 <div
                   className="detail-item animate__animated animate__fadeIn"
                 >
-                  <img className="img-front a" src={items.imageSemiFront}></img>
-                  <img className="img-detail" src={items.girlFront}></img>
+                  <img className="img-front a" src={items.imageSemiFront} alt="Imagen que muestra una cartera gucci"></img>
+                  <img className="img-detail" src={items.girlFront} alt="Imagen que muestra una chica modelando una cartera gucci"></img>
                 </div>
               </div>
               <div className="carousel-item">
@@ -57,15 +57,15 @@ export const ItemDetail = () => {
                   className="detail-item animate__animated animate__fadeIn"
                   key={items.id}
                 >
-                  <img className="img-front" src={items.imageFDown}></img>
-                  <img className="img-front" src={items.imageBack}></img>
+                  <img className="img-front" src={items.imageFDown} alt="Imagen que muestra una cartera gucci"></img>
+                  <img className="img-front" src={items.imageBack} alt="Imagen que muestra una cartera gucci"></img>
                 </div>
               </div>
 
               <div className="carousel-item">
                 <div className="detail-item animate__animated animate__fadeIn" key={items.id}>
-                  <img className="img-front" src={items.imageLeft}></img>
-                  <img className="img-front" src={items.imageRight}></img>
+                  <img className="img-front" src={items.imageLeft} alt="Imagen que muestra una cartera gucci"></img>
+                  <img className="img-front" src={items.imageRight} alt="Imagen que muestra una cartera gucci"></img>
                 </div>
               </div>
             </div>

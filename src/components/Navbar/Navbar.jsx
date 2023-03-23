@@ -24,7 +24,7 @@ function Navbar() {
             <p className="language-site">English</p>
             <i className="fa-solid fa-phone"><span className="number-phone-header">+1.877.482.2499</span></i>
           </div>
-          <Link className="header-title-link" to={"/"}><img src={headerTitle} className="header-title"></img></Link>
+          <Link className="header-title-link" to={"/"}><img src={headerTitle} className="header-title" alt="Imagen que muestra el logo de la pagina Gucci"></img></Link>
           <div className="header-actions">
             <i className="fa-regular fa-heart header-icon"></i>
             <CartComponent />

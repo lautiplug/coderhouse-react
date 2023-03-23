@@ -15,10 +15,7 @@ export const CartComponent = () => {
   return (
     <>
       <div className="counter-contain">
-        <img src={shoppingbag}
-          onClick={() => setShow(true)}
-          className="fa-solid fa-bag-shopping"
-        ></img>
+        <img src={shoppingbag} onClick={() => setShow(true)} className="fa-solid fa-bag-shopping" alt="Imagen estilo icono del carrito"></img>
         <span className="counter-number">{quantity}</span>
       </div>
       {
@@ -34,7 +31,7 @@ export const CartComponent = () => {
             return (
                 <div key={item.id} className="cart-product-box">
                   <div className="cart-product">
-                    <img className="cart-img" src={item.image}></img>
+                    <img className="cart-img" src={item.image} alt="Se muestra en el carrito la imagen del producto agregado"></img>
                     <div className="cart-product-detail-container">
                       <div className="cart-product-detail">
                         <h3 className="cart-product-detail-text cpt">

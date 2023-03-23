@@ -33,7 +33,7 @@ export const Men = () => {
           <div className='grid-layout'>
             {items.map((product) => (
               <div key={product.id} className="grid">
-                <img className='image-layout' src={product.image} alt="" />
+                <img className='image-layout' src={product.image} alt="Imagenes que muestran distintas categorias de productos para hombres." />
                 <h1 className='layout-title'>{product.title}</h1>
                 <h2 className="layout-subtitle">Discover more <i className="fa-sharp fa-solid fa-angle-right angle-subtitle"></i></h2>
               </div>

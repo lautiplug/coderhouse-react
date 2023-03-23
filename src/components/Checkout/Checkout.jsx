@@ -22,7 +22,7 @@ export const ViewDetails = () => {
                   <div className="shopping-bag-content">
                     <hr className="hr-before-wr" />
                     <div className="shopping-bag-wrapper">
-                      <img className="shopping-bag-img" src={item.image}></img>
+                      <img className="shopping-bag-img" src={item.image} alt="Se muestra en el checkout la imagen del producto seleccionado"></img>
                       <div className="baglist">
                         <div className="baglist-item-summary">
                           <div className="baglist-flex-details" key={item.id}>

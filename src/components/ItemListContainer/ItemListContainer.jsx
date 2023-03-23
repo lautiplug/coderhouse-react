@@ -72,7 +72,7 @@ export const ItemListContainer = () => {
               {items.map((product) => (
                   <Link key={product.id} className="container__product-card" to={`/item/${product.id}`}>
                     <div key={product.id} className="product-link">
-                      <img className='img-product' src={product.image} alt="" />
+                      <img className='img-product' src={product.image} alt="Imagenes que muestran distintos tipos de cartera gucci" />
                       <p className="product-title">{product.title}</p>
                       <h3 className='product-price'>${product.price}</h3>
                     </div>
