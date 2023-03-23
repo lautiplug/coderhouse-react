@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1843a8eb.css",
-    "main.js": "/static/js/main.0d7b9715.js",
+    "main.css": "/static/css/main.a83e19ac.css",
+    "main.js": "/static/js/main.8f3d8ec8.js",
     "static/media/2.jpg": "/static/media/2.1c2db9b701efd849b53a.jpg",
     "static/media/3.jpg": "/static/media/3.5d03d71493d362ce2b3b.jpg",
     "static/media/shoesBrown.jpg": "/static/media/shoesBrown.54b3bd2541608543b66b.jpg",
@@ -21,11 +21,11 @@
     "static/media/2Small.avif": "/static/media/2Small.679b0fac0d34b74e3b9b.avif",
     "static/media/HeroRegularStandard_Spring-Summer-Anticipated-Look-February-2023-WLOOK14-mx_001_Default.avif": "/static/media/HeroRegularStandard_Spring-Summer-Anticipated-Look-February-2023-WLOOK14-mx_001_Default.69b17cc5d648617437c2.avif",
     "index.html": "/index.html",
-    "main.1843a8eb.css.map": "/static/css/main.1843a8eb.css.map",
-    "main.0d7b9715.js.map": "/static/js/main.0d7b9715.js.map"
+    "main.a83e19ac.css.map": "/static/css/main.a83e19ac.css.map",
+    "main.8f3d8ec8.js.map": "/static/js/main.8f3d8ec8.js.map"
   },
   "entrypoints": [
-    "static/css/main.1843a8eb.css",
-    "static/js/main.0d7b9715.js"
+    "static/css/main.a83e19ac.css",
+    "static/js/main.8f3d8ec8.js"
   ]
 }
