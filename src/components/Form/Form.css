@@ -284,7 +284,8 @@
 }
 
 .form__container .form__btn {
-    width: 100%;
+    width:29%;
+    margin-top: 30px;
     background-color: #000000;
     color: #fff;
     border: none;

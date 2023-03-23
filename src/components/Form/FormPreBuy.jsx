@@ -100,6 +100,7 @@ export const FormPreBuy = () => {
             Total: ${total}
           </h5>
           {cart.map((item) => {
+            return(
               <>
                 <div key={item.id} className='item-detail-buy'>
                   <div className="bag-content-checkout">
@@ -132,6 +133,7 @@ export const FormPreBuy = () => {
                   </div>
                 </div>
               </>
+              )
           })}
         </div>
         <button type="submit" value="submit" className="btn btn-danger mb-4 form__btn rounded-0" data-toggle="modal" data-target="#exampleModal">Confirm Buy</button>
