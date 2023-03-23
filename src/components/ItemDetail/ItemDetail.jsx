@@ -40,8 +40,8 @@ export const ItemDetail = () => {
             >
               <div className="carousel-item active">
                 <div className="detail-item animate__animated animate__fadeIn">
-                  <img className="img-detail a" src={items.girlWBag}></img>
-                  <img className="img-front-first" src={items.imageFront}></img>
+                  <img className="img-detail a" src={items.girlWBag} alt="Imagen que muestra una cartera gucci"></img>
+                  <img className="img-front-first" src={items.imageFront} alt="Imagen que muestra una modelo con cartera gucci"></img>
                 </div>
               </div>
               <div className="carousel-item">

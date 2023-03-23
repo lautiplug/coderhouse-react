@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './ItemListContainer.css';
-import { Link } from 'react-router-dom';
-import { doc, getDoc, getDocs, getFirestore, collection } from 'firebase/firestore'
+import { getDocs, getFirestore, collection } from 'firebase/firestore'
 
 export const Men = () => {
 

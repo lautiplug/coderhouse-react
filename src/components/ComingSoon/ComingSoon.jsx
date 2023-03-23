@@ -7,7 +7,7 @@ export const ComingSoon = () => {
         <div className='soon-container'>
             <div className="hero-products-soon"></div>
             <div className="img-coming-soon">
-                <img className='img-gucci-soon' src={gucciSoon} alt="" />
+                <img className='img-gucci-soon' src={gucciSoon} alt="Esta imagen contiene una chica como modelo" />
             </div>
             <div className='details-text-soon'>
                 <h1>Thanks for visiting my site.</h1>

@@ -12,17 +12,17 @@ export const IndexCarouselBag = () => {
       <div id="carouselExampleRide" className="carousel slide bag-carousel" data-bs-ride="true">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={bag1} className="d-block bag-img" alt="..." />
+            <img src={bag1} className="d-block bag-img" alt="Imagen que muestra una cartera gucci" />
             <p className="carousel-bag-text">Gucci Deco small shoulder bag</p>
             <ButtonShopNow/>
           </div>
           <div className="carousel-item">
-            <img src={bag2} className="d-block bag-img" alt="..." />
+            <img src={bag2} className="d-block bag-img" alt="Imagen que muestra una cartera gucci" />
             <p className="carousel-bag-text">Gucci Deco small shoulder bag</p>
             <ButtonShopNow/>
           </div>
           <div className="carousel-item">
-            <img src={bag3} className="d-block bag-img" alt="..." />
+            <img src={bag3} className="d-block bag-img" alt="Imagen que muestra una cartera gucci" />
             <p className="carousel-bag-text">Gucci Deco small shoulder bag</p>
             <ButtonShopNow/>
           </div>

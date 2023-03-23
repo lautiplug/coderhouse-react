@@ -105,7 +105,7 @@ export const FormPreBuy = () => {
                   <div className="bag-content-checkout">
                     <div className="shopping-bag-content">
                       <div className="shopping-bag-wrapper-checkout">
-                        <img className="shopping-bag-img" src={item.image}></img>
+                        <img className="shopping-bag-img" src={item.image} alt="Imagen correspondiente al producto seleccionado"></img>
                         <div className="baglist">
                           <div className="baglist-item-summary">
                             <div className="baglist-flex-details-checkout">
