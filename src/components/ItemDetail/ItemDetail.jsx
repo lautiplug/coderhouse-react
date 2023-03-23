@@ -89,7 +89,7 @@ export const ItemDetail = () => {
             </button>
           </div>
           <div className="actions">
-            <div className="actions-card">
+            <div className="actions-card" style={{backgroundColor: `${items.colorBGC}`}}>
               <h1 className="actions-card-title">{items.title}</h1>
               <span className="divider"></span>
               <p className="actions-card-p">${items.price}</p>
