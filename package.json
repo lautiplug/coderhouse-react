@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
 
-  "homepage": "https://lautitheplug.github.io/coderhouse-react/build",
+  "homepage": "https://lautiplug.github.io/coderhouse-react/build",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
