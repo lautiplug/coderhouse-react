@@ -1,8 +1,10 @@
-# Pre entrega N°2 para Coderhouse. Este proyecto tiene la finalidad de simular un sitio web dedicado a la venta de productos.
+# Entrega final del curso de React en Coderhouse. Este proyecto tiene la finalidad de simular un sitio web (Gucci) sin animos de lucro y ficticio dedicado a la venta de productos. En el podrás simular desde 0 la adquisición de productos de la marca mundialmente reconocida.
 
 A continuación adjunto un prototipo de aplicación que está aún en desarrollo.
 
-![2023-03-01-15-38-48](https://user-images.githubusercontent.com/108102623/222234554-671da98c-4d26-4992-a3f5-f16e22f48b26.gif)
+![finalversionpageGIF](https://user-images.githubusercontent.com/108102623/227323893-47439a57-8512-4f62-91e1-493e78288d6d.gif)
+
+# <- DISCLAIMER -> Los datos que coloques quedarán alojados en una base de datos de prueba, así que te recomiendo ingresar datos ficticios.
 
 # Getting Started with Create React App
 
