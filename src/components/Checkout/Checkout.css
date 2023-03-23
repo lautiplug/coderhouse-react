@@ -264,11 +264,6 @@ li {
 
 /* /////////////////////// */
 
-.modal-box {
-  height: 15rem;
-  /*   background-color:#e7e7e7; */
-}
-
 .modal-title {
   font-size: 30px;
 }
@@ -277,14 +272,6 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.img-modal {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  Clip-path: inset(25px 0px 0px 0px);
-  mix-blend-mode: darken;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -429,8 +416,8 @@ li {
     font-weight: bold;
     margin-bottom: 0px;
     position: absolute;
-    bottom: 7%;
-    left: 0;
+    top: 98.7%;
+    left: 8%;
   }
 
   .baglist-title {
@@ -444,7 +431,7 @@ li {
     letter-spacing: 1px;
     color: black;
     position: absolute;
-    top: 2%;
+    top: 10%;
     left: 0;
   }
 }

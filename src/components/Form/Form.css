@@ -211,6 +211,10 @@
     align-items: center;
 }
 
+.baglist-title-form{
+    width: 60%;
+}
+
 .salvador-checkout {
     display: flex;
     flex-direction: column;
@@ -225,7 +229,7 @@
 }
 
 .form__container {
-    width: 40%;
+    width: 80%;
     margin: 0 auto;
     height: auto;
     display: flex;
@@ -344,7 +348,7 @@
 
 @media only screen and (max-width: 990px) {
     .form__container {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -384,6 +388,16 @@
         border: 1px solid;
         margin-top: 30px;
     }
+
+    .cart-product-detail-price-form {
+        font-size: 11px;
+        color: #313131;
+        font-weight: bold;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 79%;
+        right: 10%;
+      }
 }
 
 @media only screen and (max-width: 640px) {
@@ -472,4 +486,14 @@
         transition: transform .3s, opacity .2s, -webkit-transform .3s;
         font-family: 'Gucci';
     }
+
+    .cart-product-detail-price-form {
+        font-size: 11px;
+        color: #313131;
+        font-weight: bold;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 82%;
+        left: 13%;
+      }
 }

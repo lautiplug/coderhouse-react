@@ -100,7 +100,6 @@ export const FormPreBuy = () => {
             Total: ${total}
           </h5>
           {cart.map((item) => {
-            return (
               <>
                 <div key={item.id} className='item-detail-buy'>
                   <div className="bag-content-checkout">
@@ -110,7 +109,7 @@ export const FormPreBuy = () => {
                         <div className="baglist">
                           <div className="baglist-item-summary">
                             <div className="baglist-flex-details-checkout">
-                              <h2 className="baglist-title">{item.title}</h2>
+                              <h2 className="baglist-title-form">{item.title}</h2>
                             </div>
                             <p className="cart-product-detail-text">
                               style: #{item.id}
@@ -118,7 +117,7 @@ export const FormPreBuy = () => {
                             <p className="cart-product-detail-text">
                               Variation: {item.bagType}
                             </p>
-                            <h5 className="cart-product-detail-price">
+                            <h5 className="cart-product-detail-price-form">
                               Price: ${item.price}
                             </h5>
                           </div>
@@ -133,7 +132,6 @@ export const FormPreBuy = () => {
                   </div>
                 </div>
               </>
-            );
           })}
         </div>
         <button type="submit" value="submit" className="btn btn-danger mb-4 form__btn rounded-0" data-toggle="modal" data-target="#exampleModal">Confirm Buy</button>

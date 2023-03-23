@@ -222,3 +222,22 @@ h1{
   }
   
 }
+
+@media screen and (max-width: 1080px) {
+  .actions-card{
+    position: absolute;
+    top: 90%;
+    background-color: #F1E8FB;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-family: 'Gucci', sans-serif;
+    transition: background-color .5s ease-out .1s;
+    width: 100%;
+    font-size: 12px;
+    color: #313131;
+  }
+}
