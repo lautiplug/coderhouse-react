@@ -2,7 +2,7 @@
 
 https://www.youtube.com/watch?v=JhZgDmZXFfA
 
-# <- DISCLAIMER -> Los datos que coloques quedarán alojados en una base de datos de prueba, así que te recomiendo ingresar datos ficticios.
+# <- DISCLAIMER -> Los datos que introduzcas en el formulario de "confirmar compra" quedarán alojados en una base de datos de prueba, así que te recomiendo ingresar datos ficticios.
 
 # Getting Started with Create React App
 
