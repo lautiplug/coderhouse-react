@@ -1,0 +1,500 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Gucci";
+    src: url(../../Font/futura-font/futura\ light\ bt.ttf) format("truetype");
+}
+
+.hero-products-checkout {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background: rgba(30, 28, 28, 0.271);
+    background-image: url("../../images/HeroRegularStandard_Gucci-Spring-Summer-23-002_001_Default.avif");
+    background-size: cover;
+    background-blend-mode: soft-light;
+    position: relative;
+}
+
+.hero-products-subtitle-checkout {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 5px;
+    font-family: 'Gucci';
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 8px;
+    margin-top: 6px;
+    padding-top: 24px;
+    position: relative;
+}
+
+/* Modal content */
+
+.swal-modal {
+    width: 700px;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    position: static;
+    margin: 20px auto;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    z-index: 10001;
+    transition: opacity .2s, -webkit-transform .3s;
+    transition: transform .3s, opacity .2s;
+    transition: transform .3s, opacity .2s, -webkit-transform .3s;
+    font-family: 'Gucci';
+}
+
+.swal-title {
+    color: #000000;
+    text-transform: none;
+    position: relative;
+    display: block;
+    padding: 13px 16px;
+    font-size: 27px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Gucci';
+}
+
+.swal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: right;
+    padding-top: 13px;
+    margin-top: 13px;
+    padding: 13px 16px;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    width: 100%;
+    border-top-right-radius: 0;
+    font-family: "Gucci";
+}
+
+.swal-button-container {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.swal-button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    width: 100%;
+    font-family: "Gucci";
+}
+
+.swal-button:hover {
+    background-color: rgb(15, 15, 15)000;
+}
+
+.modal-content-confirmated {
+    width: 40%;
+    margin: 0 auto;
+    height: 300px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.button-details-link-confirmed {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #1b1b1b;
+    outline: 1px solid #1b1b1b;
+    display: block;
+    height: 40px;
+    position: relative;
+    bottom: 0;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.grid-mal {
+    background-color: #e7e7e7;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+}
+
+
+.image-layout-mal {
+    width: 60%;
+    margin: 0 auto;
+    mix-blend-mode: darken;
+    position: relative;
+    bottom: 15%;
+    padding: 0px;
+}
+
+/* Form */
+
+.item-detail-buy {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.bag-content-checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background: var(--clr-lightGray);
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+
+.shopping-bag-wrapper-checkout {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 5%;
+}
+
+.baglist-flex-details-checkout {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.baglist-title-form{
+    width: 60%;
+}
+
+.salvador-checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.title__h2-form {
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form__container {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    /*     padding-top: 70px; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 40px;
+    font-family: 'Gucci';
+}
+
+.form__container .form__login {
+    width: 100%;
+    object-fit: cover;
+}
+
+.form__container .form-label {
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.form__container .form-control {
+    border: 1px solid rgb(209, 209, 209);
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 0;
+    transition: all 800ms;
+}
+
+.form__container .form-control:focus {
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+}
+
+.form__container .form-control::placeholder:active {
+    display: none;
+}
+
+.form__container .form-check-input:focus {
+    background-color: #000000;
+    box-shadow: none;
+}
+
+.form__container .form-check-label {
+    color: #000;
+    font-size: 15px;
+}
+
+.form__container .form__btn {
+    width: 300px;
+    margin-top: 30px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+}
+
+.form__container .check {
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.form__container .form__link2 {
+    width: 180px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: all 300ms;
+}
+
+.form__container .form__link2:hover {
+    color: #000000;
+}
+
+.form__container .form__link {
+    width: 180px;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 40px;
+    color: #000;
+    font-weight: bold;
+    transition: all 300ms;
+}
+
+.form__container .form__link:hover {
+    color: #000000;
+}
+
+.form__container .fa-facebook-f,
+.form__container .fa-google,
+.form__container .fa-twitter,
+.form__container .fa-github {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #000;
+}
+
+.label-check {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+}
+
+.check-input {
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (max-width: 990px) {
+    .form__container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .salvador-checkout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .label-check {
+        width: 400px;
+        padding: 10px;
+        background-color: rgb(207, 207, 207);
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .form__container .form__btn {
+        width: 91%;
+        background-color: #fdfdfd;
+        color: #000000;
+        border: 1px solid;
+        margin-top: 30px;
+    }
+
+    .cart-product-detail-price-form {
+        font-size: 11px;
+        color: #313131;
+        font-weight: bold;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 79%;
+        right: 10%;
+      }
+}
+
+@media only screen and (max-width: 640px) {
+    .form__container {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .salvador-checkout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .bag-content-checkout {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        background: var(--clr-lightGray);
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 35px;
+    }
+
+    .shopping-bag-wrapper-checkout {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-left: 5%;
+    }
+
+    .label-check {
+        width: 300px;
+        padding: 10px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .form__container .form__btn {
+        width: 300px;
+        background-color: #fdfdfd;
+        color: #000000;
+        border: 1px solid;
+        margin-top: 30px;
+    }
+
+    .swal-modal {
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        position: static;
+        margin: 20px auto;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        z-index: 10001;
+        transition: opacity .2s, -webkit-transform .3s;
+        transition: transform .3s, opacity .2s;
+        transition: transform .3s, opacity .2s, -webkit-transform .3s;
+        font-family: 'Gucci';
+    }
+
+    .cart-product-detail-price-form {
+        font-size: 11px;
+        color: #313131;
+        font-weight: bold;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 82%;
+        left: 13%;
+      }
+}

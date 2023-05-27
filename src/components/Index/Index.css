@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+@font-face {
+  font-family: "Gucci";
+  src: url(../../Font/futura-font/futura\ light\ bt.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.carousel {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-img1 {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  background: rgba(30, 28, 28, 0.271);
+  background-image: url("../../images/shoesBrown.jpg");
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+.carousel-img2 {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  background: rgba(30, 28, 28, 0.271);
+  background-image: url("../../images/2.jpg");
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+.carousel-img3 {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  background: rgba(30, 28, 28, 0.271);
+  background-image: url("../../images/3.jpg");
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+.carousel-img4 {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  background: rgba(30, 28, 28, 0.271);
+  background-image: url("../../images/4.jpg");
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+
+.carousel-details {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  width: 100%;
+}
+
+.carousel-text {
+  color: #f0f0f0;
+  width: 100%;
+  font-size: 58px;
+  letter-spacing: 2px;
+  font-variant-ligatures: none;
+  line-height: 70px;
+  margin-bottom: 16px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Gucci";
+  text-align: center;
+}
+
+.carousel-text-b {
+  font-size: 62px;
+  font-family: "Gucci";
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 4px;
+  font-size: 66px;
+  letter-spacing: 2px;
+  font-variant-ligatures: none;
+  line-height: 70px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.carousel-button-par {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-button-flex {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #1b1b1b;
+  border: none;
+  display: block;
+  height: 40px;
+  position: relative;
+  margin-bottom: 15px;
+  width: 10%;
+  padding: 12px;
+  color: white;
+  left: 45%;
+  transform: translateX(-50%);
+}
+
+.carousel-button {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #1b1b1b;
+  border: none;
+  display: block;
+  height: 40px;
+  position: relative;
+  margin-bottom: 15px;
+  width: 130px;
+  padding: 12px;
+  color: white;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* BAG CAROUSEL SECTION */
+
+.bag-container {
+  width: 100%;
+  height: 720px;
+  box-sizing: border-box;
+  padding-top: 100px;
+  text-align: center;
+  background: #e7e7e7;
+  border: 15px solid white;
+}
+
+.carousel-bag {
+  margin-top: 100px;
+  width: 100%;
+  height: 800px;
+}
+
+.bag-img {
+  display: inline-block;
+  max-height: 390px;
+  margin: 0 auto;
+}
+
+.ccontrol {
+  height: 100px;
+  width: 100px;
+  margin-top: 350px;
+}
+
+/* Arrow slider */
+
+.ccontrol-d {
+  height: 100px;
+  width: 100px;
+  margin-top: 195px;
+}
+
+.icon-w {
+  height: 60px;
+  width: 50px;
+}
+
+.icon {
+  filter: invert(60%);
+  height: 60px;
+  width: 50px;
+}
+
+/* Arrow slider */
+
+/* Detail bag */
+
+.carousel-bag-text {
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-variant-ligatures: none;
+  line-height: 35px;
+  text-transform: initial;
+  color: #313131;
+  font-family: "Gucci";
+}
+
+/* Detail bag */
+
+@media only screen and (max-width: 900px) {
+  .carousel-img1 {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    background: rgba(30, 28, 28, 0.271);
+    background-image: url("../../images/shoesBrownSmall.jpg");
+    background-size: cover;
+    background-blend-mode: soft-light;
+  }
+  
+  .carousel-img2 {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    background: rgba(30, 28, 28, 0.271);
+    background-image: url("../../images/2Small.avif");
+    background-size: cover;
+    background-blend-mode: soft-light;
+  }
+  
+  .carousel-img3 {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    background: rgba(30, 28, 28, 0.271);
+    background-image: url("../../images/3Small.jpg");
+    background-size: cover;
+    background-blend-mode: soft-light;
+  }
+  
+  .carousel-img4 {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    background: rgba(30, 28, 28, 0.271);
+    background-image: url("../../images/4Small.avif");
+    background-size: cover;
+    background-blend-mode: soft-light;
+  }
+
+  .carousel-details {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    width: 100%;
+  }
+
+  .carousel-text {
+    color: #f0f0f0;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-variant-ligatures: none;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Gucci";
+    text-align: center;
+    font-size: 26px;
+    display: block;
+    line-height: 35px;
+    margin-bottom: 5px;
+  }
+  
+  .carousel-text-b {
+    font-family: "Gucci";
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-variant-ligatures: none;
+    line-height: 70px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    display: block;
+    line-height: 35px;
+  }
+
+  .carousel-button-par {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .carousel-button-flex {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #1b1b1b;
+    border: none;
+    display: block;
+    height: 40px;
+    position: relative;
+    margin-bottom: 15px;
+    width: 30%;
+    padding: 12px;
+    color: white;
+    left: 32%;
+    transform: translateX(-50%);
+  }
+
+  .bag-container {
+    width: 100%;
+    height:  580px;
+    box-sizing: border-box;
+    padding-top: 100px;
+    text-align: center;
+    background: #e7e7e7;
+    border: 15px solid white;
+  }
+  
+  .carousel-bag {
+    margin-top: 100px;
+    width: 40%;
+    height: 800px;
+  }
+  
+  .bag-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+
+  .ccontrol, .ccontrol-d{
+    width: 10%;
+  }
+  
+  .icon-w, .icon {
+    margin-bottom: 200px;
+    height: 30px;
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+
+  .carousel-details {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    width: 100%;
+  }
+
+  .carousel-text {
+    color: #f0f0f0;
+    letter-spacing: 2px;
+    font-variant-ligatures: none;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Gucci";
+    text-align: center;
+    font-size: 24px;
+    display: block;
+    line-height: 35px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .carousel-text-b {
+    font-family: "Gucci";
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-variant-ligatures: none;
+    line-height: 70px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    display: block;
+    line-height: 35px;
+  }
+
+  .ccontrol, .ccontrol-d{
+    width: 10%;
+  }
+  
+  .icon-w, .icon {
+    margin-bottom: 250px;
+    height: 30px;
+    width: 30px;
+  }
+}
