@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Gucci";
+    src: url(../Font/futura-font/ashe.ttf) format("truetype");
+}
+
+.soon-container {
+    position: relative;
+}
+
+.hero-products-soon {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background: rgba(30, 28, 28, 0.271);
+    background-image: url("../../images/comingsoon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    position: relative;
+}
+
+.img-coming-soon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.img-gucci-soon {
+    width: 150px;
+}
+
+.details-text-soon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.details-text-soon h1 {
+    color: white;
+    font-family: 'Gucci';
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.details-text-soon p {
+    color: white;
+    font-family: 'Gucci';
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.button-details-soon {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #1b1b1b;
+    outline: 1px solid #1b1b1b;
+    display: block;
+    height: 40px;
+    position: absolute;
+    bottom: 35%;
+    left: 40%;
+    width: 10%;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.button-details-right {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    outline: 1px solid #1b1b1b;
+    display: block;
+    height: 40px;
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    width: 10%;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .details-text-soon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .button-details-soon {
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: #1b1b1b;
+        outline: 1px solid #1b1b1b;
+        display: block;
+        height: 40px;
+        position: absolute;
+        bottom: 35%;
+        left: 30%;
+        width: 20%;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+
+    .button-details-right {
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: #f3f3f3;
+        outline: 1px solid #1b1b1b;
+        display: block;
+        height: 40px;
+        position: absolute;
+        bottom: 35%;
+        left: 50%;
+        width: 20%;
+        padding: 12px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+
+    .details-text-soon h1 {
+        width: 100%;
+        color: white;
+        font-family: 'Gucci';
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .details-text-soon p {
+        width: 100%;
+        color: white;
+        font-family: 'Gucci';
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .button-details-soon {
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: #1b1b1b;
+        outline: 1px solid #1b1b1b;
+        display: block;
+        height: 40px;
+        position: absolute;
+        bottom: 30%;
+        left: 10%;
+        width: 40%;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+
+    .button-details-right {
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: #f3f3f3;
+        outline: 1px solid #1b1b1b;
+        display: block;
+        height: 40px;
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        width: 40%;
+        padding: 12px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin-left: 15px;
+    }
+}
