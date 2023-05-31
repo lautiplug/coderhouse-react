@@ -11,6 +11,7 @@ export const ItemDetail = () => {
 
   const [items, setItems] = useState();
   const { id } = useParams();
+  const { addProduct } = useCartContext();
 
   // I got especific item with id
 
@@ -26,7 +27,6 @@ export const ItemDetail = () => {
     });
   }, []);
 
-  const { addProduct } = useCartContext();
 
   return (
     <div className="detail-item-container">

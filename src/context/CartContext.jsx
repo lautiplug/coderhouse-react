@@ -15,11 +15,13 @@ export const CartProvider = ({ children, id }) => {
   const addProduct = (item) => {
     if (isInCart(item.id)) {
       setCart(cart.map((product) => {
-        return product.id === item.id && item.quantity < item.stock ? { ...product, quantity: product.quantity + 1 }
-          : product
+        if (product.id === item.id && item.quantity < item.stock) {
+          return { ...product, quantity: product.quantity + 1 };
+        } else {
+          return product;
+        }
       }));
-    }
-    else {
+    } else {
       setCart([...cart, { ...item, quantity: 1 }]);
     }
   }
