@@ -1,11 +1,15 @@
 import { addDoc, collection, getFirestore } from 'firebase/firestore'
-import { useState } from 'react'
-import { Navigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useCartContext } from '../../context/CartContext'
 import "../../styles/Form.css";
 import swal from 'sweetalert';
 
 export const FormPreBuy = () => {
+
+  const navigate = useNavigate();
+
+
   const { cart, clearCart } = useCartContext([])
 
   const [buyerName, setBuyerName] = useState('');
@@ -41,8 +45,9 @@ export const FormPreBuy = () => {
       total: total
     };
 
+
     const goIndex = () => {
-      <Navigate to="/" />
+      navigate('/');
     }
 
     // Reset form after purchase
@@ -50,28 +55,40 @@ export const FormPreBuy = () => {
       setBuyerName('');
       setBuyerPhone('');
       setBuyerEmail('');
-      cart([]);
-      clearCart()
-      total(0);
+      clearCart();
+      goIndex()
     };
 
     // Adding a new document
 
     addDoc(ordersCollection, order)
-      .then((docRef) => {
-        swal(`Your order was confirmed succesfully!`, `Transaction ID: ${docRef.id}`);
-        resetForm();
-        goIndex()
-      })
-      .catch((e) => {
-        console.log('Error al agregar el documento', e);
+    .then((docRef) => {
+      swal({
+        title: 'Your order was confirmed successfully!',
+        text: `Transaction ID: ${docRef.id}`,
+        buttons: {
+          ok: {
+            text: 'GO TO HOME VIEW.',
+            value: 'ok',
+            className: 'custom-ok-button',
+          },
+        },
+      }).then((value) => {
+        if (value === 'ok') {
+          goIndex();
+          resetForm();
+        }
       });
+    })
+    .catch((e) => {
+      console.log('Error al agregar el documento', e);
+    });
   };
 
   return (
 
     <>
-{      <div className="hero-products-checkout">
+      {<div className="hero-products-checkout">
         <p className="hero-products-subtitle-checkout">CHECKOUT</p>
       </div>}
       <h2 className="title__h2-form">Complete the form to continue with the purchase.</h2>

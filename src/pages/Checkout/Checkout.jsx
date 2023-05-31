@@ -53,7 +53,7 @@ export const ViewDetails = () => {
                               Your selection is available for immediate purchase
                               online.
                             </p>
-                            
+
                             <p className="delete-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</p>
 
                             <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" key={item.id}>
@@ -63,7 +63,7 @@ export const ViewDetails = () => {
                                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                   </div>
                                   <div className="modal-body" key={item.id}>
-                                  <h1 className="modal-title text-dark text-center mb-4" id="exampleModalLabel">Are you sure you want to remove this?</h1>
+                                    <h1 className="modal-title text-dark text-center mb-4" id="exampleModalLabel">Are you sure you want to remove this?</h1>
                                   </div>
                                   <div className="modal-footer border-0">
                                     <div className="buttons-bag-container gap-2">

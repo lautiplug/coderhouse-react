@@ -103,14 +103,9 @@
     border: none;
     box-shadow: none;
     border-radius: 5px;
-    font-weight: 600;
     font-size: 14px;
     width: 100%;
     font-family: "Gucci";
-}
-
-.swal-button:hover {
-    background-color: rgb(15, 15, 15)000;
 }
 
 .modal-content-confirmated {
@@ -345,20 +340,7 @@
     color: #000;
 }
 
-.label-check {
-    padding: 10px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 300px;
-}
 
-.check-input {
-    width: 20px;
-    height: 20px;
-}
 
 @media only screen and (max-width: 1500px) {
     .form__container {
