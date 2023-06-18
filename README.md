@@ -1,7 +1,7 @@
 # Entrega final del curso de React en Coderhouse. Este proyecto tiene la finalidad de simular un sitio web (Gucci) sin animos de lucro y ficticio dedicado a la venta de productos.
 
 Para probar el proyecto tendrás que 
-* descargar o clonar el proyecto con git clone https://github.com/lautiplug/coderhouse-react.git
+* descargar o clonar el proyecto con: git clone https://github.com/lautiplug/coderhouse-react.git
 * abrir la terminal y poner: npm install
 * para iniciar: npm run dev
 
