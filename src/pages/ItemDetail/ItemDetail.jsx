@@ -23,6 +23,7 @@ export const ItemDetail = () => {
     getDoc(djRef).then((snapshot) => {
       if (snapshot.exists()) {
         setItems({ id: snapshot.id, ...snapshot.data() });
+        console.log(snapshot.data())
       }
     });
   }, []);

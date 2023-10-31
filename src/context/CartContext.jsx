@@ -20,7 +20,7 @@ export const CartProvider = ({ children, id }) => {
         } else {
           return product;
         }
-      }));
+      }));  
     } else {
       setCart([...cart, { ...item, quantity: 1 }]);
     }

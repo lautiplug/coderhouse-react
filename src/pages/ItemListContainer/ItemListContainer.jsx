@@ -31,7 +31,6 @@ export const ItemListContainer = () => {
               <h1 className='hero-products-title'>WOMEN'S HANDBAGS</h1>
               <p className="hero-products-hr">  </p>
               <p className="hero-products-subtitle">Gucci handbags for women mix signature lines with diverse designs, like totes, top handle, shoulder bags and belt bags in leather and precious materials.</p>
-              {/* category >, Line > (All), Sort by > (NEWEST) */}
             </div>
             <div className='products-actions'>
               <h1 className="title-index">WOMEN | Handbags</h1>
